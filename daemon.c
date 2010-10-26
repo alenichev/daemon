@@ -24,6 +24,12 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#if defined(__GNUC__)
+# ifndef __dead
+#  define __dead __attribute__((__noreturn__))
+# endif
+#endif
+
 __dead void usage(void);
 void restrict_process(const char *, const char *);
 
