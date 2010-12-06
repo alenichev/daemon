@@ -1,0 +1,2 @@
+daemon is a utility that detaches itself from the controlling terminal
+and executes the program specified by its arguments.
